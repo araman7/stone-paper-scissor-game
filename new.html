@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Stone Paper Scissor Game</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-replace-svg="nest"></script>
+  <style>
+  body {
+  text-align: center;
+  background-color: #283149;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #DBEDF3;
+  font-family: "Arvo", cursive;
+  text-shadow: 3px 0 #DA0463;
+
+}
+
+footer {
+  color: #DBEDF3;
+  font-family: sans-serif;
+}
+
+
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #DBEDF3;
+  opacity: 0.5;
+}
+
+.red {
+  color: red;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid #404B69;
+  font-size: 5rem;
+  font-family: 'Arvo', cursive;
+  line-height: 2;
+  font-weight: 900;
+  color: #DA0463;
+  text-shadow: 3px 0 #DBEDF3;
+  border-radius: 15px;
+  display: inline-block;
+  width: 170px;
+  height: 170px;
+  text-align: center;
+  margin: 10px;
+  background-color: white;
+}
+.fa-gamepad{
+	margin:0px 20px 0px 20px;
+	text-shadow: 3px 0 #DBEDF3;
+}
+.stone p{
+	visibility:hidden;
+}
+
+</style>
+</head>
+
+
+<body>
+
+  <h1 id="title">Stone Paper Scissor<i class="fas fa-gamepad"></i></h1>
+
+  <div class="set">
+    <button class="stone drum" value="0"><i class="fas fa-fist-raised "></i></button>
+    <button class="paper drum" value="1"><i class="fas fa-hand-paper"></i></button>
+    <button class="scissor drum" value="2"><i class="fas fa-hand-scissors"></i></button>
+
+  </div>
+
+<h1 class="win">Result</h1>
+
+
+  <footer>
+    Made with 💖
+  </footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="stone_paper_scissor.js"></script>
+</body>
+
+</html>
